@@ -9,8 +9,8 @@ execute anchored eyes positioned ^ ^ ^0.1 positioned ~ ~-0.8 ~ as @e[type=armor_
 execute anchored eyes positioned ^ ^ ^0.1 positioned ~ ~-0.8 ~ run item replace entity @s[gamemode=!creative] weapon.mainhand from entity @e[type=armor_stand,tag=senba.click,limit=1,sort=nearest] weapon.mainhand
 scoreboard objectives remove senba.damage
 
-#処理
-execute positioned ~ ~0.35 ~ run kill @e[type=armor_stand,tag=senba.click,limit=1,sort=nearest]
-
 #ファンクション実行 まとめて実行！
 function #senba.click:click
+
+#処理
+execute positioned ~ ~0.35 ~ run kill @e[type=armor_stand,tag=senba.click,limit=1,sort=nearest]
