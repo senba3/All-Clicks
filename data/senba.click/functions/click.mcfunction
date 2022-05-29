@@ -1,9 +1,6 @@
 #進捗ロック 検知狩野永徳にする
 advancement revoke @s only senba.click:click
 
-#ファンクション実行 まとめて実行！
-function #senba.click:click
-
 #アイテムを復元 アマスタにアイテムが持って行かれた
 scoreboard objectives add senba.damage dummy
 execute anchored eyes positioned ^ ^ ^0.1 positioned ~ ~-0.8 ~ as @e[type=armor_stand,tag=senba.click] store result score @s senba.damage run data get entity @p SelectedItem.Count
@@ -14,3 +11,6 @@ scoreboard objectives remove senba.damage
 
 #処理
 execute positioned ~ ~0.35 ~ run kill @e[type=armor_stand,tag=senba.click,limit=1,sort=nearest]
+
+#ファンクション実行 まとめて実行！
+function #senba.click:click
