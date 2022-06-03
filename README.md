@@ -6,5 +6,5 @@
 
 2. アイテムに"{sen.clicks:1b}"のタグをつける。
 
-3. "{sen.clicks:1b}"が右クリックされたら"#senba.click:click"が実行されるので、なんとかする
+3. "{sen.clicks:1b}"が右クリックされたら"#senba.click:click"が実行されるので、SelectedItemとかを検知してなんとかする
 
